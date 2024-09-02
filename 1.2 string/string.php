@@ -22,52 +22,52 @@ Output: <?=strpos($str,"fox")?><br/><br/>
 </span>
 
 1. Uppercase all - expected output: THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: strtoupper($str)<br>
+Output: <?=strtoupper($str)?><br/><br/>
 
 2. Uppercase first character of each word - expected output: The Quick Brown Fox Jumped Over The Lazy Dog<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: ucwords(strtolower($str))<br>
+Output: <?=ucwords(strtolower($str))?><br/><br/>
 
 3. Count number of characters<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: strlen($str)<br>
+Output: <?=strlen($str)?><br/><br/>
 
 4. Count number of words<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: str_word_count($str)<br>
+Output: <?=str_word_count($str)?><br/><br/>
 
 5. Repeat the sentence 3 times<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: str_repeat($str . " ", 3)<br>
+Output: <?=str_repeat($str . " ", 3)?><br/><br/>
 
 6. Reverse the string - expected output: god YZAL eht revo DEPMUJ xof nworb KCIUQ eht<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: strrev($str)<br>
+Output: <?=strrev($str)?><br/><br/>
 
 7. Find the position of the 2nd "the" word.<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: strpos($str, "the", strpos($str, "the") + 1)<br>
+Output: <?=strpos($str, "the", strpos($str, "the") + 1)?><br/><br/>
 
 8. Show the word "brown" only<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: substr($str, strpos($str, "brown"), strlen("brown"))<br>
+Output: <?=substr($str, strpos($str, "brown"), strlen("brown"))?><br/><br/>
 
 9. Apply MD5 encryption - expected output: 6f7270aba07c8e93d0cba68f0ce04a1b<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: md5($str)<br>
+Output: <?=md5($str)?><br/><br/>
 
 10. Replace "fox" with "elephant" - expected output: the QUICK brown elephant JUMPED over the LAZY dog<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: str_replace("fox", "elephant", $str)<br>
+Output: <?=str_replace("fox", "elephant", $str)?><br/><br/>
 
 11. Convert string into a word array (empty space as delimiter)<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: explode(" ", $str)<br>
+Output: <?=print_r(explode(" ", $str))?><br/><br/>
 
 12. Convert array back into string using commas - expected output: the,QUICK,brown,fox,JUMPED,over,the,LAZY,dog<br>
-Answer: <br>
-Output: <br/><br/>
+Answer: implode(",", explode(" ", $str))<br>
+Output: <?=implode(",", explode(" ", $str))?><br/><br/>
 
 
 </body>
