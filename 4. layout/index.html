@@ -2,7 +2,72 @@
 <head><title>Layouts (HTML Tables)</title></head>
 <body>
 
-<!-- your answer goes here -->
+    //height="10" width="10"
+<table border="1" cellpadding="30" cellspacing="1">
+    <tr>
+        <td colspan="3" align="center" valign="bottom">A</td>
+    </tr>
+    <tr>
+    	<td rowspan="1" align="right" valign="top">B</td>
+        <td rowspan="1" align="left" valign="top">C</td>
+        <td rowspan="2" align="center" valign="middle">D</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="left" valign="bottom">E</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+<html>
+<head>
+    <title>Layouts (HTML Tables)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 20px; /* Adjust padding as needed */
+        }
+        .center-bottom {
+            text-align: center;
+            vertical-align: bottom;
+        }
+        .right-top {
+            text-align: right;
+            vertical-align: top;
+        }
+        .left-top {
+            text-align: left;
+            vertical-align: top;
+        }
+        .center-middle {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .left-bottom {
+            text-align: left;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="3" class="center-bottom">A</td>
+    </tr>
+    <tr>
+        <td class="right-top">B</td>
+        <td class="left-top">C</td>
+        <td rowspan="2" class="center-middle">D</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="left-bottom">E</td>
+    </tr>
+</table>
 
 </body>
 </html>

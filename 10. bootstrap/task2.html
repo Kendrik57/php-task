@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grids</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        .img-responsive {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Row 1: 6(a)-6(b) -->
+        <div class="row">
+            <!-- Column a: 8-4 -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <a href="image1.jpg" data-lightbox="gallery"><img src="image1.jpg" class="img-responsive" alt="Image 1"></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="image2.jpg" data-lightbox="gallery"><img src="image2.jpg" class="img-responsive" alt="Image 2"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column b: 4-8 -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="image3.jpg" data-lightbox="gallery"><img src="image3.jpg" class="img-responsive" alt="Image 3"></a>
+                    </div>
+                    <div class="col-lg-8">
+                        <a href="image4.jpg" data-lightbox="gallery"><img src="image4.jpg" class="img-responsive" alt="Image 4"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <a href="image5.jpg" data-lightbox="gallery"><img src="image5.jpg" class="img-responsive" alt="Image 5"></a>
+            </div>
+            <div class="col-lg-6">
+                <a href="image6.jpg" data-lightbox="gallery"><img src="image6.jpg" class="img-responsive" alt="Image 6"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

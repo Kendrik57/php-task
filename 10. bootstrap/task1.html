@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lightbox CSS (for the slideshow) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        .responsive {
+          width: 100%;
+          height: auto;
+        }
+        </style>
+
+<div class="container">
+    <div class="row">
+        <!-- Row 1: 12 -->
+        <div class="col-12">
+            <a href="Nature photograpy.jpg" data-lightbox="image-set">
+                <img src="Images/nature_phoyograpy.jpg" class="img-responsive img-fluid w-100" alt="Nature photograpy">
+            </a>
+        </div>
+    </div>
+    
+    <div class="row mt-3">
+        <!-- Row 2: 2-2-2-2-4 -->
+        <div class="col-2">
+            <a href="img_nature.jpg" data-lightbox="image-set">
+                <img src="img_nature.jpg" alt="Nature" class="responsive" width="600" height="400">
+            </a>
+        </div>
+        <div class="col-2">
+            <a href="image3.jpg" data-lightbox="image-set">
+                <img src="image3.jpg" class="img-responsive img-fluid w-100" alt="Image 3">
+            </a>
+        </div>
+        <div class="col-2">
+            <a href="image4.jpg" data-lightbox="image-set">
+                <img src="image4.jpg" class="img-responsive img-fluid w-100" alt="Image 4">
+            </a>
+        </div>
+        <div class="col-2">
+            <a href="image5.jpg" data-lightbox="image-set">
+                <img src="image5.jpg" class="img-responsive img-fluid w-100" alt="Image 5">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="image6.jpg" data-lightbox="image-set">
+                <img src="image6.jpg" class="img-responsive img-fluid w-100" alt="Image 6">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
